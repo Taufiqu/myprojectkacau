@@ -12,7 +12,7 @@ const projectsData = [
     title: "Iris Flower Classifier",
     description: "ML model to classify iris flowers using Scikit-learn.",
     image: "/images/projects/1.jpg",
-    fullDescription: "Iris Flower Classifier is a machine learning model built using Scikit-learn that classifies the iris flowers into different species based on specific features such as petal length, petal width, sepal length, and sepal width. It is a classification task that leverages a dataset of iris flowers.",
+    fullDescription: "Iris Flower Classifier is a machine learning model built that using Scikit-learn that classifies the iris flowers into different species based on specific features such as petal length, petal width, sepal length, and sepal width. It is a classification task that leverages a dataset of iris flowers.",
     tag: ["All", "Web", "Machine Learning"],
     gitUrl: "https://github.com/Taufiqu/-ML-iris-clasifier",
     previewUrl: "/"
