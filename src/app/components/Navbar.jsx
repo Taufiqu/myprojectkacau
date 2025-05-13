@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import Link from "next/link";
 import NavLink from './NavLink';
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import AboutSection from './AboutSection';
+import Image from "next/image";
 
 const navLinks = [
   { title: "About", path: "#about" },
@@ -22,7 +24,7 @@ const Navbar = () => {
       <div className='flex flex-wrap items-center justify-between mx-auto px-4 py-4 max-w-7xl'>
         {/* Logo */}
         <Link href={"/"} className='text-2xl md:text-5xl text-white font-semibold'>
-          LOGO
+          <Image src="/images/LOGO FIX.png" width={60} height={60} alt='LOGO'/>
         </Link>
 
         {/* Mobile Toggle Button */}

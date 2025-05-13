@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 import Link from 'next/link'
-import { GithubIcon, LinkedinIcon } from 'lucide-react'
+import { GithubIcon, LinkedinIcon, InstagramIcon } from 'lucide-react'
 import { motion } from 'framer-motion'
 import GradientCircle from './GradientCircle'
 
@@ -38,7 +38,7 @@ const EmailSection = () => {
   }
 
   return (
-    <section className="relative grid md:grid-cols-2 gap-4 my-12 py-24 px-4 xl:px-16">
+    <section id="contact" className="relative grid md:grid-cols-2 gap-4 my-12 py-24 px-4 xl:px-16">
       {/* Decorative Background Circle */}
       <GradientCircle position="left" />
 
@@ -54,6 +54,9 @@ const EmailSection = () => {
           </Link>
           <Link href="https://linkedin.com/in/muhammad-hafizh-taufiqurrohman-421121290" target="_blank">
             <LinkedinIcon className="text-white w-6 h-6 hover:text-[#39FF14] transition-colors duration-300" />
+          </Link>
+          <Link href="https://www.instagram.com/hafizh_tr/" target="_blank">
+            <InstagramIcon className="text-white w-6 h-6 hover:text-[#39FF14] transition-colors duration-300" />
           </Link>
         </div>
       </div>

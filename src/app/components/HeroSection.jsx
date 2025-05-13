@@ -46,7 +46,7 @@ const HeroSection = () => {
               onClick={() =>
                 document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
               }
-              className="px-6 py-3 w-full sm:w-fit rounded-full bg-gradient-to-r from-[#39FF14] via-[#00FFC6] to-[#39FF14] text-black font-bold transition duration-300"
+              className="px-6 py-3 w-full sm:w-fit rounded-full bg-gradient-to-r from-[#39FF14] via-[#00FFC6] to-[#39FF14] text-black font-bold transition duration-100"
             >
               Hire Me
             </motion.button>
@@ -57,7 +57,7 @@ const HeroSection = () => {
               transition={{ type: "spring", stiffness: 300 }}
               href="/cv/Zenn-CV.pdf"
               download
-              className="px-6 py-3 w-full sm:w-fit rounded-full border border-[#39FF14] text-[#39FF14] text-center hover:bg-[#39FF14]/10 transition duration-300 font-semibold"
+              className="px-6 py-3 w-full sm:w-fit rounded-full border border-[#39FF14] text-[#39FF14] text-center hover:bg-[#39FF14]/10 transition duration-100 font-semibold"
             >
               Download CV
             </motion.a>
@@ -68,9 +68,9 @@ const HeroSection = () => {
         <div className="col-span-5 place-self-center mt-4 lg:mt-0">
           <div className="rounded-full bg-[#181818] w-[250px] aspect-square lg:w-[400px] relative">
             <Image
-              src="/images/P1.jpg"
+              src="/images/P3.jpg"
               alt="Profile Image"
-              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-full"
               width={300}
               height={300}
               priority

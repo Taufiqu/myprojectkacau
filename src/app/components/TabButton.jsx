@@ -1,16 +1,24 @@
-import React from "react";
+'use client';
+import React from 'react';
+import { motion } from 'framer-motion';
 
 const TabButton = ({ active, selectTab, children }) => {
-    const buttonClasses = active
-        ? "text-white border-b border-[#39FF14]"
-        : "text-[#ADB7BE]";
+  return (
+    <button onClick={selectTab} className="relative text-white group px-2 py-1">
+      <span className={`font-medium transition-colors ${active ? 'text-[#39FF14]' : 'text-gray-400'}`}>
+        {children}
+      </span>
 
-    return (
-        <button onClick={selectTab}>
-            <p className={`mr-3 font-semibold hover: text-white ${buttonClasses}`}>
-                {children}
-            </p> </button>
-    );
+      {/* Underline animation */}
+      {active && (
+        <motion.div
+          layoutId="underline"
+          className="absolute bottom-0 left-0 right-0 h-[2px] bg-[#39FF14]"
+          transition={{ type: 'spring', stiffness: 300, damping: 25 }}
+        />
+      )}
+    </button>
+  );
 };
 
 export default TabButton;
