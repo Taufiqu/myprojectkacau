@@ -1,0 +1,2 @@
+Set-Alias npm "C:\Program Files\nodejs\npm.cmd"
+Set-Alias npx "C:\Program Files\nodejs\npx.cmd"
