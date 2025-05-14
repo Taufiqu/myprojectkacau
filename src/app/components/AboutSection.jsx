@@ -92,20 +92,21 @@ const AboutSection = () => {
           </div>
 
           {/* Tab Content with Animation */}
-          <div className="relative min-h-[150px] mt-8">
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={tab}
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -10 }}
-                transition={{ duration: 0.4 }}
-                className='absolute w-full'
-              >
-                {currentTab?.content}
-              </motion.div>
-            </AnimatePresence>
-          </div>
+          <div className="relative mt-8">
+  <AnimatePresence mode="wait">
+    <motion.div
+      key={tab}
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -10 }}
+      transition={{ duration: 0.4 }}
+      className="relative w-full"
+    >
+      {currentTab?.content}
+    </motion.div>
+  </AnimatePresence>
+</div>
+
         </div>
       </div>
     </section>

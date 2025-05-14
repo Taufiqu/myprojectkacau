@@ -9,7 +9,12 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, onPreview
           className="h-52 md:h-72 rounded-t-xl relative group overflow-hidden"
           style={{ backgroundImage: `url(${imgUrl})`, backgroundSize: "cover", backgroundPosition: "center" }}
         >
-          <div className="absolute inset-0 bg-[#181818] bg-opacity-0 group-hover:bg-opacity-80 transition-all duration-500 flex justify-center items-center gap-4 opacity-0 group-hover:opacity-100">
+          <div className="absolute inset-0 flex justify-center items-center gap-4 
+            bg-[#181818] 
+            bg-opacity-80 opacity-100 
+            sm:bg-opacity-0 sm:opacity-0 
+            sm:group-hover:bg-opacity-80 sm:group-hover:opacity-100 
+            transition-all duration-500">
             <button
               onClick={onPreviewClick}
               className="h-14 w-14 border-2 rounded-full border-[#ADB7BE] hover:border-white flex justify-center items-center transition-all duration-300 hover:scale-110"
