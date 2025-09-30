@@ -10,9 +10,9 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, onPreview
       <div
         className='h-52 md:h-72 relative group'
         style={{
-          backgroundImage: `url(${imgUrl})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center"
+                backgroundImage: `url(${imgUrl})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center"
         }}
       >
         {/* Overlay */}

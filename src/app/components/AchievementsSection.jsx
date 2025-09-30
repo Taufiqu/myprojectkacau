@@ -1,12 +1,13 @@
 'use client'
 import React from 'react'
 import { motion } from 'framer-motion'
+import { projectsData } from './data/Projects';
 
 const achievementsList = [
-  { metric: "Projects", value: "100+" },
-  { metric: "Users", value: "1M+" },
-  { metric: "Awards", value: "10+" },
-  { metric: "Years", value: "5+" }
+  { metric: "Projects", value: projectsData.length.toString() },
+  { metric: "Users", value: "1" },
+  { metric: "Awards", value: "5" },
+  { metric: "Years", value: "2+" }
 ];
 
 const AchievementsSection = () => {
