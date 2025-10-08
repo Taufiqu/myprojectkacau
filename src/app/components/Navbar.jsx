@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import Link from "next/link";
 import NavLink from './NavLink';
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
-import AboutSection from './AboutSection';
 import Image from "next/image";
 
 const navLinks = [
